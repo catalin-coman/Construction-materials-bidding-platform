@@ -1,0 +1,11 @@
+.register-form {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 3%;
+}
+
+h1 {
+    text-align: center;
+}

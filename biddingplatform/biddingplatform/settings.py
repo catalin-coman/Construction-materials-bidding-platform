@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'concrete',
+    'crispy_forms',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUserModel'
@@ -127,3 +128,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/accounts'
+LOGOUT_REDIRECT_URL = '/concrete'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

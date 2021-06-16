@@ -1,0 +1,21 @@
+{% extends 'concrete/layout.html' %}
+{% block title %}Login user{% endblock title %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/style.css' %}" />
+
+
+<div class="register-form">
+    <h1>Login User</h1>
+
+    <form action="" method="post" class="form-control">
+        {% csrf_token %}
+
+        {{ form|crispy }}
+
+        <button type="submit" class="btn btn-success" style="margin-top: 2%;">Login</button>
+    </form>
+</div>
+{% endblock content %}

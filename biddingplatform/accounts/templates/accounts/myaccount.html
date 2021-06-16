@@ -1,0 +1,19 @@
+{% extends 'concrete/layout.html' %}
+{% block title %}Login user{% endblock title %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    <h1>Hi {{ user.username }}</h1>
+    <p><a href="{% url 'logout' %}">Logout</a></p>
+    
+{% else %}
+    <p>You are not logged in</p>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+
+{% endif %}
+
+{% endblock content %}
