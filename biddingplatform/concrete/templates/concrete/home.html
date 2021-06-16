@@ -1,0 +1,73 @@
+{% extends 'concrete/layout.html' %}
+
+{% block title %}
+    Concrete Homepage
+{% endblock title %}
+
+{% block content %}
+
+    <h1>Welcome {{ request.user.username }}</h1>
+
+    <div class="homepage-cards">
+
+        <div class="card" style="width: 18rem;">
+            <img src="/static/concrete/images/card-background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Choose the right concrete for your project</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/static/concrete/images/card-background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Order concrete</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/static/concrete/images/card-background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Rent a pump</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/static/concrete/images/card-background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Pouring the concrete</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="homepage-widecard">
+
+        <div class="card mb-3">
+            <img src="/static/concrete/images/card-wide-background.jpg" class="card-img-top" height="100em">
+            <div class="card-body">
+            <h5 class="card-title">About Us</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/static/concrete/images/card-wide-background.jpg" class="card-img-top" height="100em">
+            <div class="card-body">
+            <h5 class="card-title">Our Partners</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}

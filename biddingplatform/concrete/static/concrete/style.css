@@ -1,0 +1,44 @@
+h1 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.navbar {
+    background-color:rgb(161, 175, 180);
+}
+
+.homepage-cards {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -36em;
+    margin-top: 2%;
+}
+
+.homepage-widecard {
+    position: absolute;
+    left: 50%;
+    margin-left: -50em;
+    top: 90%;
+    width: 100em;
+}
+
+.card {
+    margin-left: 1%;
+}
+
+.order-form {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 3%;
+}
+
+.order-form-adress {
+    width: 500px;
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 15%;
+}
