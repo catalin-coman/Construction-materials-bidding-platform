@@ -1,5 +1,7 @@
 {% extends 'concrete/layout.html' %}
 {% block title %}Create a new Order{% endblock title %}
+{% load crispy_forms_tags %}
+{% load static %}
 
 {% block content %}
 
@@ -9,15 +11,8 @@
         <form action="" method="POST">
             {% csrf_token %}
             
-            {% for field in form %}
-    
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">{{ field.label_tag }}</span>
-                    {{ field }}
-                </div>
+            {{ form|crispy }}
             
-            {% endfor %}
-
             <button type="submit" class="btn btn-primary">Submit Order</button>
         </form>
     </div>

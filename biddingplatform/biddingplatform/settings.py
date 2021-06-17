@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'concrete',
     'crispy_forms',
+    'ordering',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUserModel'
