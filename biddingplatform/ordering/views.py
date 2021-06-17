@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.urls.base import reverse_lazy
 from .models import Order
 from django.views.generic import CreateView, UpdateView, DeleteView
