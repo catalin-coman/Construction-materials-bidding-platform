@@ -25,9 +25,10 @@ class Order(models.Model):
     Concrete_pump = CharField(max_length=2, choices=CONCRETE_PUMP_CHOICES, default=NO_PUMP)
     Address = CharField(max_length=100, null=False)
     Pour_date = DateTimeField(null=False)
+    Order_date = DateTimeField(auto_now_add=True)
 
     def get_absolute_url(self):
         return reverse("concrete-home")
 
     def __str__(self):
-        return 'Order number ' + str(self.id) + ' by ' + ' - ' + str(self.Concrete) + ' on date ' + str(self.Pour_date)
+        return 'Order number ' + str(self.id) + ' created on ' +str(self.Order_date) + ' by ' + ' - ' + str(self.Concrete) + ' pouring date ' + str(self.Pour_date)
